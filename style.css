@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  --dark-gray: hsl(210, 10%, 33%);
+  --light-gray: hsl(201, 11%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+/* Header styling */
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* This is just used to give text color to all the headings and paragraphs of the page */
+h1,
+h2 {
+  color: var(--dark-gray);
+}
+
+p {
+  color: var(--light-gray);
+  line-height: 1.7rem;
+}
+
+/* Style Header Section */
+header {
+  background-image: url(images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-position: cover;
+  padding: 5rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+
+.main-heading {
+  /* background-color: aqua; */
+  max-width: 700px;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.main-content {
+  max-width: 700px;
+  text-align: center;
+}
+
+.btn-box {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 0.7rem 1.4rem;
+  font-size: 0.9rem;
+  border-radius: 2rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-green {
+  background-color: hsl(171, 66%, 44%);
+}
+
+.btn-blue {
+  background-color: hsl(233, 100%, 69%);
+}
+
+@media (max-width: 400px) {
+  header {
+    display: flex;
+  }
+
+  .main-heading {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .main-content {
+    font-size: 0.8rem;
+  }
+
+  .btn-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+/* Snippet Section */
+
+main {
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+.snippet-title-box {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.snippet-features {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.snippet-content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.snippet-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.computer-img {
+  width: 100%;
+  margin-left: -10rem;
+}
+
+@media (max-width: 1100px) {
+  .computer-img {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 14px;
+  }
+
+  .snippet-features {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .computer-img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* Clipboard Section */
+
+.clipboard-section {
+  margin-top: 10rem;
+  /* background-color: lightgoldenrodyellow; */
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.clipboard-title-box {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Productivity Section */
+
+.productivity-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  /* background-color: aquamarine; */
+  margin: 5rem 0;
+}
+
+.productivity-title-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.productivity-feature-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  text-align: center;
+}
+
+.productivity-feature {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+}
+
+@media (max-width: 400px) {
+  .productivity-title-box {
+    text-align: center;
+  }
+
+  .productivity-feature-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
+  .company-logo-img {
+    max-width: 100%;
+  }
+}
+
+/* logo Section */
+
+.logo-section {
+  margin: 10rem auto;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: bisque; */
+}
+
+@media (max-width: 400px) {
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .company-logo-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+  }
+}
+
+/* Download Section */
+
+.download-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* background-color: burlywood; */
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+}
+
+.download-section-box {
+  max-width: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-box {
+  justify-content: center;
+}
+
+/* Footer Section Styling */
+
+footer {
+  background-color: hsl(0, 0%, 97%);
+  padding: 3rem 6rem;
+}
+
+.footer-section {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.social-icon {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (max-width: 400px) {
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
